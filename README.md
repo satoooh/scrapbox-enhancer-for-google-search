@@ -6,6 +6,9 @@ This is a Chrome extension that displays Scrapbox search results alongside Googl
 
 Improve your Google search results by seamlessly integrating relevant Scrapbox pages into your search results page.
 
+- Searchable for both public and private projects
+- Multiple projects can be searched simultaneously
+
 ## How to use
 
 1. install this extension
