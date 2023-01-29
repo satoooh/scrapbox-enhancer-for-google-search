@@ -1,0 +1,34 @@
+{
+  "name": "Scrapbox Enhancer for Google Search",
+  "description": "Enhance your Google search results by seamlessly integrating relevant Scrapbox pages into your search results page.",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://scrapbox.io/api/pages/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.google.com/search?q=*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  }
+}
