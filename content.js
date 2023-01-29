@@ -49,8 +49,10 @@ function showResults(response, projectName) {
   if (document.getElementById("rhs")) {
     document.getElementById("rhs").prepend(container);
   } else {
-    container.setAttribute("id", "rhs");
-    document.getElementById("rcnt").appendChild(container);
+    const rhs = document.createElement("div");
+    rhs.setAttribute("id", "rhs");
+    document.getElementById("rcnt").appendChild(rhs);
+    document.getElementById("rhs").prepend(container);
   }
 }
 
