@@ -12,7 +12,6 @@ function saveOption() {
   }
   chrome.storage.local.set({ projects: projects }, function () {});
   chrome.storage.local.set({ sids: sids }, function () {});
-  console.log("saved", projects, sids);
   alert("saved", projects, sids);
 }
 
@@ -24,7 +23,6 @@ function loadOption() {
     for (let i = 0; i < items.projects.length; i++) {
       document.querySelector(`#project_${i + 1}`).value = items.projects[i];
       document.querySelector(`#sid_${i + 1}`).value = items.sids[i] || "";
-      console.log("loaded", items.projects[i], items.sids[i]);
     }
   });
 }
@@ -33,7 +31,7 @@ function addForm() {
   const formCount = document.querySelectorAll("input").length / 2;
 
   const newForm = document.createElement("div");
-  newForm.setAttribute("class", "form-row");
+  newForm.className = "form-row";
   const newLabel = document.createElement("label");
   newLabel.textContent = `Project ${formCount + 1}:`;
   newForm.appendChild(newLabel);
@@ -42,8 +40,8 @@ function addForm() {
   newFormProject.setAttribute("class", "col");
   const newFormProjectInput = document.createElement("input");
   newFormProjectInput.type = "text";
-  newFormProjectInput.setAttribute("id", `project_${formCount + 1}`);
-  newFormProjectInput.setAttribute("class", "form-control");
+  newFormProjectInput.className = "form-control";
+  newFormProjectInput.id = `project_${formCount + 1}`;
   newFormProject.appendChild(newFormProjectInput);
   newForm.appendChild(newFormProject);
 
@@ -51,8 +49,8 @@ function addForm() {
   newFormSid.setAttribute("class", "col");
   const newFormSidInput = document.createElement("input");
   newFormSidInput.type = "text";
-  newFormSidInput.setAttribute("id", `sid_${formCount + 1}`);
-  newFormSidInput.setAttribute("class", "form-control");
+  newFormSidInput.id = `sid_${formCount + 1}`;
+  newFormSidInput.className = "form-control";
   newFormSid.appendChild(newFormSidInput);
   newForm.appendChild(newFormSid);
 
