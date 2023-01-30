@@ -47,6 +47,7 @@ function showResults(response, projectName) {
 }
 
 function search(projects, sids) {
+  if (!projects) return;
   for (let i = 0; i < projects.length; i++) {
     const searchUrl = getSearchUrl(projects[i]);
 
