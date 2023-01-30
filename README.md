@@ -6,8 +6,8 @@ This is a Chrome extension that displays Scrapbox search results alongside Googl
 
 Improve your Google search results by seamlessly integrating relevant Scrapbox pages into your search results page.
 
-- Searchable for both public and private projects
-- Multiple projects can be searched simultaneously
+- Search both public and private projects
+- Multiple projects can be searched at the same time
 
 ## How to use
 
@@ -16,4 +16,5 @@ Improve your Google search results by seamlessly integrating relevant Scrapbox p
 3. enjoy!
 
 - To check your Scrapbox project sid: [https://scrapbox.io/scrapboxlab/connect.sid](https://scrapbox.io/scrapboxlab/connect.sid)
-- If your project is public, you do not need to set sid
+- If your project is public, you do not need to set sid.
+- more details: [ScrapboxとGoogleを同時検索するChrome拡張機能「Scrapbox Enhancer for Google Search」を作った](https://www.satoooh.org/blog/create-scrapbox-chrome-extension)
