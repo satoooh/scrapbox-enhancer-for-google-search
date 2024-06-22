@@ -14,25 +14,15 @@ function showResults(response, projectName) {
   const container = document.createElement("div");
   container.className = "scrapbox-search-results";
 
-  // add title
-  const project = document.createElement("h2");
-  project.textContent = `search results in scrapbox.io/${projectName}:`;
-  container.appendChild(project);
+  container.innerHTML = `<h2>search results in scrapbox.io/${projectName}:</h2>`;
 
   if (!data.length) {
-    const message = document.createElement("p");
-    message.textContent = "No results found.";
-    container.appendChild(message);
+    container.innerHTML += `<p>No results found.</p>`;
   } else {
     data.forEach((page) => {
-      const pageTitle = document.createElement("a");
-      pageTitle.href = baseUrl + page.title;
-      pageTitle.target = "_blank";
-      pageTitle.textContent = page.title;
-      container.appendChild(pageTitle);
-      const spacer = document.createElement("span");
-      spacer.textContent = " / ";
-      container.appendChild(spacer);
+      container.innerHTML += `<a href="${
+        baseUrl + page.title
+      }" target="_blank">${page.title}</a><span> / </span>`;
     });
   }
 
