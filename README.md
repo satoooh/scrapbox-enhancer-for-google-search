@@ -2,7 +2,7 @@
 
 This is a Chrome extension that displays Scrapbox search results alongside Google search results.
 
-![screenshot](https://gyazo.com/ff42ad2596c9d5bf75d9b34ff0ef1754.png)
+![screenshot](screenshot.png)
 
 Improve your Google search results by seamlessly integrating relevant Scrapbox pages into your search results page.
 
