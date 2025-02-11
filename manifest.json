@@ -1,7 +1,7 @@
 {
   "name": "Scrapbox Enhancer for Google Search",
   "description": "Enhance your Google search results by seamlessly integrating relevant Scrapbox pages into your search results page.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "manifest_version": 3,
   "icons": {
     "16": "icon.png",
