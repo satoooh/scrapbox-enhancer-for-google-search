@@ -1,6 +1,7 @@
 div.scrapbox-search-results {
   margin-bottom: 40px;
   padding: 15px;
+  min-width: var(--rhs-width);
   max-width: var(--rhs-width);
   border: 1px solid #3c4043;
   border-radius: 8px;
