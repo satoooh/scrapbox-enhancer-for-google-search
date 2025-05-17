@@ -18,3 +18,7 @@ Improve your Google search results by seamlessly integrating relevant Scrapbox p
 - To check your Scrapbox project sid: [https://scrapbox.io/scrapboxlab/connect.sid](https://scrapbox.io/scrapboxlab/connect.sid)
 - If your project is public, you do not need to set sid.
 - more details: [ScrapboxとGoogleを同時検索するChrome拡張機能「Scrapbox Enhancer for Google Search」を作った](https://www.satoooh.org/blog/create-scrapbox-chrome-extension)
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
