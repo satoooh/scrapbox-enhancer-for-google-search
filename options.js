@@ -54,7 +54,7 @@ function addForm() {
   newFormSid.appendChild(newFormSidInput);
   newForm.appendChild(newFormSid);
 
-  document.querySelector("form").appendChild(newForm);
+  document.querySelector("#form").appendChild(newForm);
 }
 
 document.querySelector("#add").addEventListener("click", addForm);
