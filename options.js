@@ -12,7 +12,7 @@ function saveOption() {
   }
   chrome.storage.local.set({ projects: projects }, function () {});
   chrome.storage.local.set({ sids: sids }, function () {});
-  alert("saved", projects, sids);
+  alert(`saved: ${projects.join(', ')}`);
 }
 
 function loadOption() {
